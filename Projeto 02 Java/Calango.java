@@ -1,3 +1,5 @@
+//Implementei uma lógica dentro do método "acidentar" de que quando o calango perde todas as suas patas, ele morre.
+//Também implementei um método chamado "ressucitar" que verifica o atributo booleano "alive" para ressucitar o calango ou não.
 
 public class Calango {
     int bucho; //atributos
