@@ -6,4 +6,4 @@
 
 4. Pude revisar o básico da programação orientada a objetos (Classes, métodos e atributos), no entanto ainda devo me aproundar mais em Classes e métodos dentro da linguagem Java.
 
-5. Acredito que estudei por umas 4h, contando com o tempo de codificação dos projetos.
+5. Acredito que estudei por umas 5h, contando com o tempo de codificação dos projetos.
