@@ -8,9 +8,9 @@ public class Carro {
     int passMax;
     int km;
 
-    Carro(int gas, int pass, int km){  
+    Carro(){  
 
-        this.gas = gas;
+        this.gas = 0;
         this.gasMax = 100;
         this.pass = 0;
         this.passMax = 2;
@@ -74,7 +74,7 @@ public class Carro {
 
     public static void main(String[] args) {
         
-        Carro car = new Carro(0, 0, 0);
+        Carro car = new Carro();
         System.out.println(car);
     }
 }
