@@ -30,11 +30,6 @@ class Maquina{
         this.maxProdutos = maxProdutos;
         this.qtdEspirais = qtdEspirais;
         this.espirais = new ArrayList<>();
-        
-        for(int i = 0; i < qtdEspirais; i++){
-            this.espirais.add(new Espiral("vazio", 0, 0f));
-            this.conteudo += i + " [" + this.espirais.get(i).nome + " : " + this.espirais.get(i).qtd + " U : " + this.espirais.get(i).preco + " RS]\n";
-        }
     }
 
     boolean inserirDinheiro(float valor){
