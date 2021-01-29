@@ -6,6 +6,6 @@
 
 3. Tudo o que implementei em meus códigos foi baseado nos Classworks que praticamos e em fontes pela WEB.
 
-4. Pude aprender mais sobre Arraylists e superei minha dificuldade com o método "toString".
+4. Pude aprender mais sobre "Arraylists" e superei minha dificuldade com o método "toString".
 
 5. Acredito que estudei por umas 5h, contando com o tempo de codificação do projeto.
