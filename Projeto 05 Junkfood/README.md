@@ -1,4 +1,4 @@
-# Arraylist
+# Junkfood
 
 1. Fiz o projeto "Junkfood" utilizando do meu conhecimento sobre Arraylists .
 
