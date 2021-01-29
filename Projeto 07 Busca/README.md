@@ -1,6 +1,6 @@
-# Favoritos
+# Busca
 
-1. Fiz o projeto "Junkfood" utilizando do meu conhecimento sobre Arraylists .
+1. Fiz o projeto "Busca" utilizando do meu conhecimento sobre Arraylists .
 
 2. Pratiquei e aprendi sozinho.
 
