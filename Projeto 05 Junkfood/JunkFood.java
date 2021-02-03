@@ -13,7 +13,7 @@ class Espiral{
     }
 
     public String toString(){
-        return "["+ nome + " : " + qtd + " U : " + preco + " RS]";
+        return "[" + nome + " : " + qtd + " U : " + preco + " RS]";
     }
 }
 
@@ -30,6 +30,9 @@ class Maquina{
         this.maxProdutos = maxProdutos;
         this.qtdEspirais = qtdEspirais;
         this.espirais = new ArrayList<>();
+        for(int i = 0; i < qtdEspirais; i++){
+            espirais.add(new Espiral("empty", 0, 0));
+        }
     }
 
     boolean inserirDinheiro(float valor){
@@ -39,7 +42,7 @@ class Maquina{
     float pedirTroco(){
         float aux = this.saldoCliente;
         this.saldoCliente = 0;
-        System.out.println("Voce recebeu " + aux + "RS");
+        System.out.println("Voce recebeu " + aux + " RS de troco.");
         return aux;
     }
     boolean vender(int indice){
@@ -64,19 +67,15 @@ class Maquina{
             System.out.println("A espiral nao suporta essa quantidade de produtos!");
             return false;
         }
-        for(int i = 0; i < qtdEspirais; i++){
-            
-            this.conteudo += i + " [" + this.espirais.get(i).nome + " : " + this.espirais.get(i).qtd + " U : " + this.espirais.get(i).preco + " RS]\n";
-        }
         this.espirais.get(indice).qtd = qtd;
         this.espirais.get(indice).nome = nome;
         this.espirais.get(indice).preco = preco;
         return true;
     }
     void limparEspiral(int indice){
-        this.espirais.get(indice).nome = "vazio";
+        this.espirais.get(indice).nome = "empty";
         this.espirais.get(indice).qtd = 0;
-        this.espirais.get(indice).preco = 0f;
+        this.espirais.get(indice).preco = 0;
     }
     float getSaldo(){
         System.out.println("Voce possui " + this.saldoCliente + " RS de credito");
@@ -84,7 +83,11 @@ class Maquina{
     }
 
     public String toString(){
-        return "saldo: " + saldoCliente + "\n" + conteudo;
+        String saida = "";
+        for(int i = 0; i < qtdEspirais; i++){
+            saida += i + " " + this.espirais.get(i) + "\n";
+        }
+        return saida;
     }
 }
 
@@ -95,6 +98,11 @@ public class JunkFood{
         Maquina maquina = new Maquina(3, 5);
         System.out.println(maquina);
         maquina.alterarEspiral(2, "todinho", 3, 2.50f);
+        System.out.println(maquina);
+        maquina.inserirDinheiro(10);
+        maquina.vender(2);
+        maquina.vender(2);
+        maquina.pedirTroco();
         System.out.println(maquina);
     }
 
