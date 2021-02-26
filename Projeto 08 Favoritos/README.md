@@ -1,6 +1,6 @@
 # Favoritos
 
-1. Fiz o projeto "Favortos" utilizando do meu conhecimento sobre Arraylists e mapas.
+1. Fiz o projeto "Favoritos" utilizando do meu conhecimento sobre Arraylists e mapas.
 
 2. Pratiquei e aprendi sozinho.
 
