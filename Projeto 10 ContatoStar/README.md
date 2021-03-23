@@ -1,6 +1,6 @@
 # ContatoStar
 
-1. Fiz o projeto "ContatoStat" utilizando do meu conhecimento sobre herança.
+1. Fiz o projeto "ContatoStar" utilizando do meu conhecimento sobre herança.
 
 2. Pratiquei e aprendi sozinho.
 
